@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <meta name="description" content="História de [Nome da pessoa] - Porto de Ama Centro de Cultura">
+  <title>[Nome da pessoa] - Histórias - Porto de Ama</title>
+  <link rel="stylesheet" href="./design-tokens.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVEGACAO SUPERIOR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <a href="./index.html" class="brand-logo" aria-label="Porto de Ama Centro de Cultura, página inicial">
+        <img src="./assets/images/LogoPortoDeAma.svg" alt="Porto de Ama Centro de Cultura" class="brand-logo-img" id="header-logo-img">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="./index.html" class="nav-link">Início</a></li>
+          <li><a href="./index.html#apoie" class="nav-link">Apoie</a></li>
+          <li><a href="./quem-somos.html" class="nav-link">Quem Somos</a></li>
+          <li><a href="./historia.html" class="nav-link">História</a></li>
+          <li><a href="./transformacoes.html" class="nav-link nav-link-highlight">Transformações</a></li>
+          <li><a href="./oficinas.html" class="nav-link">Oficinas</a></li>
+          <li><a href="./galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="./contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <section class="section story-section">
+      <div class="container">
+        
+        <div class="story-breadcrumb">
+          <a href="./transformacoes.html">Transformações</a> / [Nome da pessoa]
+        </div>
+
+        <div class="story-header">
+          <div class="story-header-text">
+            <h1 class="hero-title" style="margin: 0;">
+              <span class="title-bold">[Primeiro nome]</span> <span class="title-light">[Sobrenome]</span>
+            </h1>
+            <p class="story-role">[Papel na instituição, ex: Ex-aluno e monitor da Oficina de Teatro]</p>
+          </div>
+          
+          <div class="story-hero-photo">
+            [[PENDENTE:<br>foto de [Nome]]]
+          </div>
+        </div>
+
+        <article class="story-body">
+          <p>
+            Parágrafo normal de texto. Pode ser uma introdução ou parte da história.
+          </p>
+          
+          <div class="pull-quote-inline">
+            Frase de destaque tratada visualmente para impacto, com cor e borda.
+          </div>
+          
+          <p>
+            Continuação da história em parágrafos normais.
+          </p>
+
+          <p class="story-signature">Ass.: [Nome da pessoa]</p>
+          
+          <a href="./transformacoes.html" class="story-return">&larr; Ver todas as transformações</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       RODAPE (Footer)
+       ======================================================================== -->
+  <footer class="site-footer">
+    
+    <div class="palette-strip" aria-hidden="true">
+      <div class="strip-color-1"></div>
+      <div class="strip-color-2"></div>
+      <div class="strip-color-3"></div>
+      <div class="strip-color-4"></div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <a href="./index.html" class="brand-logo" aria-label="Porto de Ama Centro de Cultura">
+            <img src="./assets/images/LogoPortoDeAma.svg" alt="Porto de Ama Centro de Cultura" class="brand-logo-img brand-logo-footer">
+          </a>
+          <p style="margin-top: 0.75rem;">
+            Centro de cultura, teatro e espaço comunitário sem fins lucrativos. Arte-educação e valorização da identidade litorânea em Macau, RN.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Localização</h3>
+          <address class="footer-address">
+            <p>
+              Rua Martins Ferreira 188, Centro, Macau, RN<br>
+              CEP: 59500-000
+            </p>
+          </address>
+          <div style="margin-top: 1rem;">
+            <h3>Contato & redes sociais</h3>
+            <ul class="footer-nav-list">
+              <li><a href="https://instagram.com/portodeama" target="_blank" rel="noopener noreferrer">Instagram: @portodeama</a></li>
+              <li><a href="mailto:portodeama@gmail.com">E-mail: portodeama@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Institucional</h3>
+          <ul class="footer-nav-list">
+            <li><a href="./quem-somos.html">Quem Somos</a></li>
+            <li><a href="./historia.html">Nossa história</a></li>
+            <li><a href="./transformacoes.html">Nossas transformações</a></li>
+            <li><a href="./apoie.html">Como apoiar</a></li>
+            <li><a href="./politica-de-privacidade.html">Política de privacidade</a></li>
+            <li><a href="./termos-de-uso.html">Termos de uso</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2002-2026 Porto de Ama Centro de Cultura. Associação sem fins lucrativos.
+        </p>
+        <div class="footer-legal-links">
+          <a href="./politica-de-privacidade.html">Política de privacidade</a>
+          <a href="./termos-de-uso.html">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>

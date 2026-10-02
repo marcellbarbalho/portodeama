@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <meta name="description" content="Histórias do Porto de Ama Centro de Cultura: conheça a resistência, a fundação e as pessoas que fazem o movimento acontecer.">
+  <title>Transformações - Porto de Ama Centro de Cultura</title>
+  <link rel="stylesheet" href="./design-tokens.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVEGACAO SUPERIOR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <a href="./index.html" class="brand-logo" aria-label="Porto de Ama Centro de Cultura, página inicial">
+        <img src="./assets/images/LogoPortoDeAma.svg" alt="Porto de Ama Centro de Cultura" class="brand-logo-img" id="header-logo-img">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav aria-label="Menu principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="./index.html" class="nav-link">Início</a></li>
+          <li><a href="./index.html#apoie" class="nav-link">Apoie</a></li>
+          <li><a href="./quem-somos.html" class="nav-link">Quem Somos</a></li>
+          <li><a href="./historia.html" class="nav-link">História</a></li>
+          <li><a href="./transformacoes.html" class="nav-link">Transformações</a></li>
+          <li><a href="./oficinas.html" class="nav-link">Oficinas</a></li>
+          <li><a href="./galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="./contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ======================================================================
+         CABEÇALHO DA PÁGINA
+         ====================================================================== -->
+    <section class="section" style="padding-top: 5rem; padding-bottom: 0;">
+      <div class="container">
+        <header style="margin-bottom: 0; text-align: center;">
+          <span class="eyebrow">As pessoas</span>
+          <h1 class="hero-title" style="margin-top: 0;">
+            <span class="title-light">Nossas</span> <span class="title-bold">transformações</span>
+          </h1>
+          <p style="max-width: 600px; margin: 0 auto; color: var(--chumbo);">
+            O verdadeiro patrimônio do Porto de Ama são os monitores, alunos e voluntários. Conheça as histórias de quem faz o movimento acontecer.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         GALERIA DE CARDS (Profundidade)
+         ====================================================================== -->
+    <section class="section" style="padding-top: 0; padding-bottom: 6rem;">
+      <div class="container">
+        
+        <div class="people-cards-depth-grid">
+          
+          <!-- Card 1: Jefferson (1º Plano / Grande) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Jefferson Felipe" data-modal-target="modal-jefferson" style="--base-scale: 1.15; --base-x: -20px; --base-y: 20px; --delay: 0s; z-index: 5;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/JeffersonFelipe.jpg" alt="Jefferson Felipe">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Jefferson Felipe</p>
+              <p class="person-role">Ex-aluno e monitor de teatro</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 2: Samara (3º Plano / Distante) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Samara Rayane" data-modal-target="modal-samara" style="--base-scale: 0.85; --base-x: 40px; --base-y: -40px; --delay: -2s; z-index: 1;">
+            <div class="person-photo" style="background-color: transparent; padding: 0;">
+              <img src="./assets/images/historias/Samara%20Rayane.webp" alt="Samara Rayane">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Samara Rayane</p>
+              <p class="person-role">Professora de dança e ex-monitora</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 3: Cristian (2º Plano / Médio) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Cristian" data-modal-target="modal-cristian" style="--base-scale: 1.05; --base-x: -30px; --base-y: -10px; --delay: -4s; z-index: 3;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/Christian.webp" alt="Cristian">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Cristian</p>
+              <p class="person-role">Ex-aluno e ex-monitor de flauta doce</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 4: Anderson (Plano de Fundo Escanteado) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Anderson França" data-modal-target="modal-anderson" style="--base-scale: 0.75; --base-x: -50px; --base-y: 30px; --delay: -1s; z-index: 0;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/Anderson França.webp" alt="Anderson França">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Anderson França</p>
+              <p class="person-role">Professor e ex-monitor de Libras</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 5: Francilene (2º Plano Inferior) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Francilene" data-modal-target="modal-francilene" style="--base-scale: 0.95; --base-x: 30px; --base-y: 40px; --delay: -3s; z-index: 2;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/Francilene.webp" alt="Francilene">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Francilene (Leninha)</p>
+              <p class="person-role">Mãe de aluna da oficina de Libras</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 6: Marianne Louize (1º Plano / Meio Direito) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Marianne Louize" data-modal-target="modal-marianne" style="--base-scale: 1.10; --base-x: 15px; --base-y: -25px; --delay: -5s; z-index: 4;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/Marianne.webp" alt="Marianne Louize">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Marianne Louize</p>
+              <p class="person-role">Ex-aluna da oficina de Libras</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+          <!-- Card 7: Francisca Martins (Plano Médio / Esquerda Inferior) -->
+          <button type="button" class="person-depth-card" aria-label="Ver história completa de Francisca Martins" data-modal-target="modal-francisca" style="--base-scale: 0.90; --base-x: -35px; --base-y: 50px; --delay: -6s; z-index: 2;">
+            <div class="person-photo">
+              <img src="./assets/images/historias/FranciscaMartins.webp" alt="Francisca Martins">
+            </div>
+            <div class="person-info">
+              <p class="person-name">Francisca Martins</p>
+              <p class="person-role">Mãe da aluna Tarsila</p>
+              <span class="person-link">Ler história</span>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       MODAIS (Pop-ups)
+       ======================================================================== -->
+  
+  <!-- Modal Jefferson -->
+  <div class="story-modal-backdrop" id="modal-jefferson" role="dialog" aria-modal="true" aria-labelledby="modal-jefferson-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Jefferson Felipe" data-modal-close>&times;</button>
+      
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/JeffersonFelipe.jpg" alt="Jefferson Felipe">
+        </div>
+        <div>
+          <h2 id="modal-jefferson-title" class="story-modal-title">Jefferson Felipe</h2>
+          <p class="story-modal-role">Ex-aluno e monitor de teatro</p>
+        </div>
+      </div>
+      
+      <div class="story-modal-body">
+        <p>Minha história com o teatro começou em 2011, na Escola Maria de Lourdes, por meio do Programa Mais Educação. Foi lá que conheci o professor Titico, que levou os alunos para continuarem as oficinas no Porto de Ama. Aos poucos, fui me apaixonando pela arte. Passei de aluno curioso a alguém que encontrou no palco sua forma de expressão.</p>
+        
+        <p>Fiz cursos de palhaçaria com o grupo As Potiguaras e na Casa de Cultura Popular, o que me abriu um novo universo. Hoje, além de fazer parte da Companhia de Teatro Porto de Ama, sou monitor da oficina de teatro. Ver novos alunos chegando e descobrindo a mesma magia que me encantou lá atrás me enche de orgulho. Porque, no fim das contas, ensinar arte também é uma forma de continuar fazendo arte.</p>
+        
+        <blockquote class="story-modal-quote">
+          A arte me transformou. O teatro me ensinou. O circo me encantou. O palhaço me encontrou.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Samara -->
+  <div class="story-modal-backdrop" id="modal-samara" role="dialog" aria-modal="true" aria-labelledby="modal-samara-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Samara Rayane" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar" style="background:transparent; padding:0;">
+           <img src="./assets/images/historias/Samara%20Rayane.webp" alt="Samara Rayane">
+        </div>
+        <div>
+          <h2 id="modal-samara-title" class="story-modal-title">Samara Rayane</h2>
+          <p class="story-modal-role">Professora de dança e ex-monitora</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>Hoje é um dia de celebração, de alegria e, principalmente, de gratidão. É com muito carinho que venho deixar minha mensagem em homenagem ao aniversário do Porto de Ama. Celebrar mais um ano de história é reconhecer a importância desse lugar, que representa encontros, memórias, cultura e momentos especiais para tantas pessoas. O Porto de Ama faz parte da minha história e da identidade de Macau, reunindo pessoas e proporcionando experiências que ficam guardadas na memória e no coração.</p>
+        <p>Este ano são exatamente 13 anos que presto serviços ao mesmo. Desde os meus 18 anos, como monitora de dança do projeto Movimento Cultural, o Porto de Ama se tornou minha casa artística, onde cresci artisticamente e pude crescer também profissionalmente. Para mim, hoje, formada em licenciatura em dança e amante da arte, é muito bonito poder participar de uma celebração que valoriza a história, a cultura e as pessoas. Acredito que a arte, assim como os lugares que carregam significado, tem o poder de unir, emocionar e transformar. Atualmente estou à frente do Grudanporam (grupo de dança do Porto de Ama) como bailarina e coreógrafa. Desejo que o Porto de Ama continue sendo palco de muitos encontros, sorrisos, sonhos e histórias. Que cada novo ano traga ainda mais conquistas, momentos inesquecíveis e motivos para celebrar.</p>
+        <p>Parabéns, Porto de Ama, por mais um ano de história! É uma alegria poder fazer parte desta celebração.</p>
+        <p>Com carinho, Samara Rayane.</p>
+        <blockquote class="story-modal-quote">
+          O Porto de Ama se tornou minha casa artística, onde cresci artisticamente e pude crescer também profissionalmente.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Cristian -->
+  <div class="story-modal-backdrop" id="modal-cristian" role="dialog" aria-modal="true" aria-labelledby="modal-cristian-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Cristian" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/Christian.webp" alt="Cristian">
+        </div>
+        <div>
+          <h2 id="modal-cristian-title" class="story-modal-title">Cristian</h2>
+          <p class="story-modal-role">Ex-aluno e ex-monitor de flauta doce</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>Quando criança, eu tive a oportunidade de participar de um projeto social de música, o projeto social do Porto de Ama. Naquele momento, eu não imaginava que aquela oportunidade mudaria a minha vida.</p>
+        <p>Foi através da música que aprendi muito mais do que tocar um instrumento. Aprendi sobre disciplina, responsabilidade, dedicação e, principalmente, a nunca desistir dos meus sonhos.</p>
+        <p>O que começou como uma experiência na infância se tornou uma profissão. Hoje, sou músico militar do Exército Brasileiro e tenho muito orgulho da minha trajetória. Sou grato ao projeto que acreditou em mim e me deu a oportunidade de descobrir, através da música, um caminho para o meu futuro.</p>
+        <p>Minha história é a prova de que uma oportunidade pode transformar a vida de uma criança e fazer um sonho se tornar realidade.</p>
+        <blockquote class="story-modal-quote">
+          O que começou como uma experiência na infância se tornou uma profissão. Hoje, sou músico militar do Exército Brasileiro e tenho muito orgulho da minha trajetória.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Anderson -->
+  <div class="story-modal-backdrop" id="modal-anderson" role="dialog" aria-modal="true" aria-labelledby="modal-anderson-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Anderson França" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/Anderson França.webp" alt="Anderson França">
+        </div>
+        <div>
+          <h2 id="modal-anderson-title" class="story-modal-title">Anderson França</h2>
+          <p class="story-modal-role">Professor e ex-monitor de Libras</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>Sou professor de biologia e também tenho experiência na área de coordenação pedagógica. No entanto, uma das experiências mais significativas da minha trajetória profissional começou em 2021, quando ingressei como monitor de Libras no Movimento Cultural, um projeto social que me apresentou novos desafios, aprendizados e possibilidades.</p>
+        <p>Naquele momento, recebi o desafio de trabalhar a língua brasileira de sinais (Libras) com alunos das redes pública e privada, utilizando uma perspectiva artística, teatral. Era uma proposta diferente e, ao mesmo tempo, desafiadora: ensinar Libras por meio da arte, da expressão corporal, da criatividade e da interação.</p>
+        <p>Ao longo de três anos, tive a oportunidade de aprender muito mais do que ensinar. Com a confiança da direção e da coordenação, além do apoio e da parceria dos colegas monitores, pude contribuir para o desenvolvimento do projeto e vivenciar momentos que guardo com muito carinho.</p>
+        <p>Foram três anos de uma experiência verdadeiramente mágica, que me permitiu crescer profissionalmente e, principalmente, compreender ainda mais a importância da Libras, da inclusão e da valorização das diferentes formas de comunicação e expressão. Tenho um orgulho imenso de ter feito parte dessa história.</p>
+        <p>As experiências vivenciadas no Movimento Cultural despertaram em mim o desejo de continuar me aperfeiçoando. Com dedicação, estudo e a certeza de que poderia contribuir ainda mais para a educação de pessoas surdas, decidi pleitear o concurso público do estado do Rio Grande do Norte para o cargo de professor de Libras.</p>
+        <p>Consegui a aprovação.</p>
+        <p>Hoje, sou servidor público do estado do Rio Grande do Norte e atuo no atendimento educacional especializado em Libras, levando comigo muitos dos aprendizados, valores e experiências que construí ao longo dessa caminhada.</p>
+        <p>O Movimento Cultural não foi apenas um projeto do qual participei, foi um espaço de descobertas, encontros, aprendizagens e transformação.</p>
+        <p>Tenho muito orgulho de ter feito parte dessa história e de poder dizer que essa experiência também ajudou a construir o profissional que sou hoje.</p>
+        <blockquote class="story-modal-quote">
+          Hoje, sou servidor público do estado do Rio Grande do Norte e atuo no atendimento educacional especializado em Libras.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Francilene -->
+  <div class="story-modal-backdrop" id="modal-francilene" role="dialog" aria-modal="true" aria-labelledby="modal-francilene-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Francilene" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/Francilene.webp" alt="Francilene">
+        </div>
+        <div>
+          <h2 id="modal-francilene-title" class="story-modal-title">Francilene (Leninha)</h2>
+          <p class="story-modal-role">Mãe de aluna da oficina de Libras</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>Olá, me chamo Francilene, mas conhecida como Leninha. Sou mãe da aluna Jhully Maria, que faz parte da oficina de Libras.</p>
+        <p>O Porto de Ama é uma instituição que revela vários talentos por meio das oficinas. É um espaço que oferece às crianças e aos jovens a oportunidade de aprendizado, crescimento, convivência e novas experiências por meio de várias oficinas (Libras, dança, flauta, teatro, canto e fotografia), além de proporcionar contato com diferentes formas de arte e conhecimento.</p>
+        <p>Como mãe, considero muito importante que minha filha tenha tido a oportunidade de conhecer e aprender Libras. É um conhecimento que ela pode levar para toda a vida e que contribui não apenas para o aprendizado de uma nova habilidade, mas também para o desenvolvimento de valores como respeito, empatia e inclusão.</p>
+        <blockquote class="story-modal-quote">
+          É um conhecimento que ela pode levar para toda a vida e que contribui não apenas para o aprendizado de uma nova habilidade, mas também para o desenvolvimento de valores como respeito, empatia e inclusão.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Marianne -->
+  <div class="story-modal-backdrop" id="modal-marianne" role="dialog" aria-modal="true" aria-labelledby="modal-marianne-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Marianne Louize" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/Marianne.webp" alt="Marianne Louize">
+        </div>
+        <div>
+          <h2 id="modal-marianne-title" class="story-modal-title">Marianne Louize</h2>
+          <p class="story-modal-role">Ex-aluna da oficina de Libras</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>Oi, pessoal! Meu nome é Marianne Louize e fui aluna do Porto de Ama, na oficina de Libras, por 2 ou 3 anos.</p>
+        <p>O Porto de Ama foi uma parte muito importante de mim e da minha história. Transformou meu modo de ver o mundo e de lidar com as dificuldades, me ajudando a superar minhas inseguranças ao lado dos meus colegas de oficina e do meu professor.</p>
+        <p>O projeto me ajudou a desenvolver melhor minha comunicação com o público e a aprender a ser mais inclusiva e compreensiva com as pessoas ao meu redor.</p>
+        <p>Durante todo esse tempo, o Projeto Porto de Ama foi minha segunda casa. Um lugar para o qual eu esperava ansiosamente todos os dias para estar. Não era apenas um espaço onde ensinavam, era uma família. Em meio a risadas e brincadeiras, nós nos fortalecíamos, aprendendo e crescendo juntos.</p>
+        <p>Agradeço a todos os professores e envolvidos no projeto. Vocês fizeram parte de quem eu sou hoje!</p>
+        <blockquote class="story-modal-quote">
+          O Porto de Ama foi uma parte muito importante de mim e da minha história. Transformou meu modo de ver o mundo e de lidar com as dificuldades.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Francisca -->
+  <div class="story-modal-backdrop" id="modal-francisca" role="dialog" aria-modal="true" aria-labelledby="modal-francisca-title" hidden>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Fechar história de Francisca Martins" data-modal-close>&times;</button>
+      <div class="story-modal-header">
+        <div class="story-modal-avatar">
+           <img src="./assets/images/historias/FranciscaMartins.webp" alt="Francisca Martins">
+        </div>
+        <div>
+          <h2 id="modal-francisca-title" class="story-modal-title">Francisca Martins</h2>
+          <p class="story-modal-role">Mãe da aluna Tarsila</p>
+        </div>
+      </div>
+      <div class="story-modal-body">
+        <p>É com muita alegria, carinho e admiração que parabenizo toda a equipe do Porto de Ama Macau pelo belíssimo trabalho desenvolvido ao longo dos anos em favor das nossas crianças e adolescentes.</p>
+        <p>A adolescência é um tempo de descobertas, sonhos e transformações. Nesse caminho, a arte acolhe, desperta, transforma e abre possibilidades.</p>
+        <p>Por meio das oficinas de dança, teatro, flauta doce, Libras, fotografia e canto coral, o Porto de Ama promove muito mais do que atividades culturais, cria oportunidades, desperta talentos, fortalece vínculos e contribui para o desenvolvimento físico, cognitivo, emocional e social de meninas e meninos.</p>
+        <p>A cada espetáculo, somos brindados com magia, beleza e emoção, testemunhando o poder da arte na transformação de vidas.</p>
+        <p>Minha gratidão, carinho e reconhecimento a toda a equipe do Porto de Ama, por semear arte, cultura, educação e esperança em nossa cidade.</p>
+        <p>Que nunca faltem sonhos, arte e oportunidades para que nossas jovens sejam protagonistas de suas próprias histórias.</p>
+        <blockquote class="story-modal-quote">
+          A arte acolhe, desperta, transforma e abre possibilidades.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       RODAPE (Footer)
+       ======================================================================== -->
+  <footer class="site-footer" style="margin-top: var(--space-4xl);">
+    
+    <div class="palette-strip" aria-hidden="true">
+      <div class="strip-color-1"></div>
+      <div class="strip-color-2"></div>
+      <div class="strip-color-3"></div>
+      <div class="strip-color-4"></div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <a href="./index.html" class="brand-logo" aria-label="Porto de Ama Centro de Cultura">
+            <img src="./assets/images/LogoPortoDeAma.svg" alt="Porto de Ama Centro de Cultura" class="brand-logo-img brand-logo-footer">
+          </a>
+          <p style="margin-top: 0.75rem;">
+            Centro de cultura, teatro e espaço comunitário sem fins lucrativos. Arte-educação e valorização da identidade litorânea em Macau, RN.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Localização</h3>
+          <address class="footer-address">
+            <p>
+              Rua Martins Ferreira 188, Centro, Macau, RN<br>
+              CEP: 59500-000
+            </p>
+          </address>
+          <div style="margin-top: 1rem;">
+            <h3>Contato & redes sociais</h3>
+            <ul class="footer-nav-list">
+              <li><a href="https://instagram.com/portodeama" target="_blank" rel="noopener noreferrer">Instagram: @portodeama</a></li>
+              <li><a href="mailto:portodeama@gmail.com">E-mail: portodeama@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Institucional</h3>
+          <ul class="footer-nav-list">
+            <li><a href="./quem-somos.html">Quem Somos</a></li>
+            <li><a href="./historia.html">Nossa história</a></li>
+            <li><a href="./transformacoes.html">Nossas transformações</a></li>
+            <li><a href="./apoie.html">Como apoiar</a></li>
+            <li><a href="./politica-de-privacidade.html">Política de privacidade</a></li>
+            <li><a href="./termos-de-uso.html">Termos de uso</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2002-2026 Porto de Ama Centro de Cultura. Associação sem fins lucrativos.
+        </p>
+        <div class="footer-legal-links">
+          <a href="./politica-de-privacidade.html">Política de privacidade</a>
+          <a href="./termos-de-uso.html">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modalTriggers = document.querySelectorAll('[data-modal-target]');
+      const modalCloseBtns = document.querySelectorAll('[data-modal-close]');
+      const backdrops = document.querySelectorAll('.story-modal-backdrop');
+      
+      let lastFocusedElement;
+
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (!modal) return;
+        
+        lastFocusedElement = document.activeElement;
+        
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        
+        const closeBtn = modal.querySelector('.story-modal-close');
+        if (closeBtn) closeBtn.focus();
+      }
+
+      function closeModal(modal) {
+        if (!modal) return;
+        modal.hidden = true;
+        document.body.style.overflow = '';
+        
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      }
+
+      modalTriggers.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-modal-target');
+          openModal(targetId);
+        });
+      });
+
+      modalCloseBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const modal = e.target.closest('.story-modal-backdrop');
+          closeModal(modal);
+        });
+      });
+
+      backdrops.forEach(backdrop => {
+        backdrop.addEventListener('click', (e) => {
+          if (e.target === backdrop) {
+            closeModal(backdrop);
+          }
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const openModal = document.querySelector('.story-modal-backdrop:not([hidden])');
+          if (openModal) closeModal(openModal);
+        }
+      });
+      
+      // Focus Trap simplificado
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+          const openModal = document.querySelector('.story-modal-backdrop:not([hidden])');
+          if (!openModal) return;
+          
+          const focusableElements = openModal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+
+          if (e.shiftKey) {
+            if (document.activeElement === firstElement) {
+              lastElement.focus();
+              e.preventDefault();
+            }
+          } else {
+            if (document.activeElement === lastElement) {
+              firstElement.focus();
+              e.preventDefault();
+            }
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
