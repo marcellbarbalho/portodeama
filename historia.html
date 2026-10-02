@@ -51,7 +51,6 @@
     <section class="section" style="padding-top: 5rem; padding-bottom: 2rem;">
       <div class="container">
         <header class="fade-in" style="margin-bottom: var(--space-xl); text-align: left;">
-          <span class="eyebrow">Desde 1950</span>
           <h1 class="hero-title" style="margin-top: 0;">
             <span class="title-light">Nossa</span> <span class="title-bold">história</span>
           </h1>
@@ -96,17 +95,17 @@
             <span class="eyebrow">Fundação</span>
           </div>
           <div class="highlight-grid">
-            <div class="dust-in reveal-paused" style="position: relative; --delay: 0.4s;">
+            <div class="dust-in reveal-paused" style="position: relative; --delay: 0s;">
               <div class="quote-mark" aria-hidden="true">"</div>
               <blockquote class="pull-quote" style="text-wrap: balance;">
                 Em setembro de 2002, estava pronto um novo prédio naquele mesmo local, na rua Martins Ferreira, 188, centro de Macau: o Porto de Ama, Centro Petrobras de&nbsp;Cultura.
               </blockquote>
             </div>
             <div>
-              <img class="img-form-in reveal-paused" src="./assets/images/home/PortoDeAma_Petrobras.webp" alt="Porto de Ama Centro Petrobras de Cultura" style="width: 100%; border-radius: var(--radius, 12px); height: auto; object-fit: cover; border: 4px solid var(--vermelho); --img-delay: 0.4s;">
+              <img class="img-form-in reveal-paused" src="./assets/images/home/PortoDeAma_Petrobras.webp" alt="Porto de Ama Centro Petrobras de Cultura" style="width: 100%; border-radius: var(--radius, 12px); height: auto; object-fit: cover; border: 4px solid var(--vermelho); --img-delay: 0s;">
             </div>
           </div>
-          <div class="dust-in reveal-paused" style="color: var(--tinta); line-height: 1.7; font-family: var(--font-family-sans); font-size: 1rem; --delay: 0.6s;">
+          <div class="dust-in reveal-paused" style="color: var(--tinta); line-height: 1.7; font-family: var(--font-family-sans); font-size: 1rem; --delay: 0.2s;">
             <p>Como resultado das necessidades citadas na pesquisa feita com os moradores de Macau, depois de um hospital e uma creche, um espaço cultural figurava como uma das maiores prioridades para a população. Ancorado nessa ótica, o projeto ganhou força tendo a iniciativa da Petrobras em parceria com a agência House Bureau de Cultura e o Centro Social Pio XI, com a pretensão de desenvolver as artes e cultura em Macau e cidades circunvizinhas.</p>
             <p>Inaugurado no dia 14 de setembro de 2002, a população macauense recebeu um teatro com capacidade para 120 lugares, onde acontecem apresentações de teatro, dança, música e oficinas diversas, além de cursos e eventos de capacitação. O espaço conta também com um ateliê de artesanato e uma sala de dança, além de uma loja para comercialização dos produtos, na época feitos pelos associados e, hoje, pelas mulheres artesãs que seguem comercializando ali.</p>
             <p>Concluído o tempo de parceria com a Petrobras, que além de investir na construção pretendia dotar Macau de um espaço que resgatasse e promovesse suas manifestações culturais e garantisse sustentabilidade com variadas fontes de receita, a marca Petrobras já não está mais presente no Porto de Ama Centro de Cultura. Mas permanece na história como legado de grande valor social e cultural, pela atuação marcante desse projeto que devolveu para Macau um espaço concebido para ser uma instituição disseminadora e propulsora da arte e cultura, de forma comunitária e sustentável.</p>
@@ -207,7 +206,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.2 });
+      }, { threshold: 0.05 });
 
       document.querySelectorAll('.scroll-section').forEach(sec => observer.observe(sec));
     });
