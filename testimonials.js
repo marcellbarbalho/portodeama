@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.testimonial-slide');
-  const dots = document.querySelectorAll('.carousel-dot');
+  const carousel = document.getElementById('testimonialsCarousel');
+  if (!carousel) return;
+
+  const slides = carousel.querySelectorAll('.testimonial-slide');
+  const dots = carousel.querySelectorAll('.carousel-dot');
   
   if (slides.length === 0 || dots.length === 0) return;
 
@@ -39,11 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Pausar auto-play quando o mouse estiver em cima
-  const carousel = document.getElementById('testimonialsCarousel');
-  if (carousel) {
-    carousel.addEventListener('mouseenter', () => clearInterval(intervalId));
-    carousel.addEventListener('mouseleave', startAutoPlay);
-  }
+  carousel.addEventListener('mouseenter', () => clearInterval(intervalId));
+  carousel.addEventListener('mouseleave', startAutoPlay);
 
   // Iniciar carrossel
   startAutoPlay();
