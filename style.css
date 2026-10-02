@@ -764,6 +764,7 @@ body.is-intro-active {
 }
 
 /* Criar a borda usando pseudo-elemento para que ela fique POR CIMA de todos os filhos */
+/* ESCONDIDO TEMPORARIAMENTE: 
 .workshops-grid::after {
   content: '';
   position: absolute;
@@ -773,16 +774,16 @@ body.is-intro-active {
   height: 100%;
   border: 6px solid var(--areia);
   border-radius: var(--radius-card);
-  pointer-events: none; /* Para não bloquear cliques no conteúdo */
-  z-index: 50; /* Z-index alto para cobrir as abas que tentarem vazar pela frente */
+  pointer-events: none; 
+  z-index: 50; 
   transition: border-color 0.3s ease;
   box-sizing: border-box;
 }
 
-/* Lógica dinâmica de cores da borda da seção inteira baseada no slide ativo */
 .workshops-grid:has(.slide-bg-laranja.active)::after { border-color: var(--laranja); }
 .workshops-grid:has(.slide-bg-dourado.active)::after { border-color: var(--dourado); }
 .workshops-grid:has(.slide-bg-vermelho.active)::after { border-color: var(--vermelho); }
+*/
 
 @media (min-width: 992px) {
   .workshops-grid {
@@ -792,7 +793,6 @@ body.is-intro-active {
 
 .workshops-text-col {
   padding: var(--space-xl);
-  padding-bottom: 6rem; /* Espaço extra para os triângulos no mobile */
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gallery = document.getElementById('workshops-gallery');
   if (!gallery) return;
 
-  const tabs = gallery.querySelectorAll('.gallery-tab');
+  const tabs = gallery.querySelectorAll('.carousel-dot');
   const slides = gallery.querySelectorAll('.gallery-slide');
   let currentIndex = 0;
   let timer = null;
