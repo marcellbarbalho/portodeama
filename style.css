@@ -746,11 +746,12 @@ body.is-intro-active {
    -------------------------------------------------------------------------- */
 .workshops-section {
   background-color: var(--sal-branco);
-  /* border-top: var(--border-width) solid var(--areia); removido a pedido */
+  border-top: var(--border-width) solid var(--areia);
+  border-bottom: var(--border-width) solid var(--areia);
   position: relative;
   z-index: 10;
-  margin-top: -60px;
-  padding-top: 120px;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
 }
 
 .workshops-grid {
@@ -758,8 +759,8 @@ body.is-intro-active {
   border-radius: var(--radius-card);
   display: grid;
   grid-template-columns: 1fr;
-  overflow: visible; /* Alterado para visible para os triângulos vazarem */
-  position: relative; /* Cria stacking context para o z-index negativo dos triângulos */
+  overflow: hidden;
+  position: relative;
   z-index: 1;
 }
 
